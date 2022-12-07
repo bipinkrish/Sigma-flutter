@@ -1,0 +1,76 @@
+name: sigma
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  google_fonts: 3.0.1
+  url_launcher: 6.1.7
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: 5c51870ced62a00e809ba4b81a846a052d241c9f
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.11.0"
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/sigmalogo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/sigmalogo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/sigmalogo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/sigmalogo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/background.jpg
+    - assets/images/2020.png
+    - assets/images/2020 Jan.png
+    - assets/images/2019.png
+    - assets/images/2018.png
+    - assets/images/2017.png
+    - assets/images/2016.png
+    - assets/images/sigmalogo.png
+    - assets/images/emotech.jpg
+    - assets/images/ICTAutomation.jpg
+    - assets/images/RoboticProcessAutomation.png
+    - assets/images/TactileVR.jpg
+
+  fonts:
+    - family: Alsina
+      fonts:
+        - asset: assets/fonts/Alsina.ttf
+    - family: WebFont
+      fonts:
+        - asset: assets/fonts/FontAwesome6Brands-Regular-400.otf
+        - asset: assets/fonts/FontAwesome6Free-Regular-400.otf
+        - asset: assets/fonts/FontAwesome6Free-Solid-900.otf
+   
+
